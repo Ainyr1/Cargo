@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(../Cargo/fonts/ProximaNova-Bold.ttf) format("truetype");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(../Cargo/fonts/ProximaNova-Semibold.ttf) format("truetype");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(../Cargo/fonts/ProximaNova-Light.ttf) format("truetype");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(../Cargo/fonts/ProximaNova-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'ProximaNova';
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+/* АНИМАЦИЯ ПОДПРЫГИВАНИЯ ДЛЯ КНОПКИ */
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+/* НАСТРОЙКА КОНТЕЙНЕРОВ */
+.body__container{
+    width: 1820px;
+    margin: 0 auto;
+    background: #282B38;
+}
+.content__wrapper{
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+}
+/* HEADER */
+.header__container{
+    padding: 25px 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__nav ul{
+    display: flex;
+}
+.header__button{
+    background: #E58D35;
+    border-radius: 90px;
+    /* FOR TEXT */
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 14px 27px;
+}
+.header__button:hover{
+    animation: bounce 1s;
+}
+.nav__logo{
+    width: 172px;
+    height: 50px;
+    margin-right: 97px;
+}
+.nav__logo:hover{
+    transform: scale(1.1);
+}
+.nav__item{
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-right: 50px;
+}
+.nav__item:hover{
+    padding-bottom: 2px;
+    color: wheat;
+    border-bottom: 1px solid #FFFFFF;
+}
+/* MAIN SECTION */
+.main__container{
+    width: 1820px;
+    height: 700px;
+    margin: 0 auto;
+    background: url("../Cargo/img/main_bg.png") no-repeat center center / cover;
+}
+.main__descript{
+    padding-top: 163px;
+    width: 463px;
+    height: 309px;
+}
+.main__title{
+    font-weight: 700;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+.main__text{
+    width: 345px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 37px;
+}
+/* MAIN BUTTON */
+.main__button{
+    width: 293px;
+    height: 68px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #E58D35;
+    border-radius: 90px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.main__button:hover{
+    animation: bounce 1s;
+}
+.main__button img{
+    margin-left: 49px;
+}
